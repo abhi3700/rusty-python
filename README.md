@@ -61,6 +61,17 @@ Building rusty-python (0.1.0)
   - Built rusty_python-0.1.0-py3-none-any.whl
 ```
 
+### Lock
+
+Generate a `poetry.lock` file:
+
+```sh
+$ poetry lock
+```
+
+Like `Cargo.lock`, `poetry.lock` is a file that records the exact versions of the dependencies that were used for a particular build.
+And then one can use `$ poetry install` to install the exact versions of the dependencies.
+
 ### Run
 
 Referring to the above directory structure, the following command will run the `main.py` file:
@@ -89,3 +100,8 @@ Here are the things to note:
 - `greet.py` a module that is a part of package `rusty_python`.
   > A module is a single file (or files) that are imported under one import and used. Package is a collection of modules in directories that give a package hierarchy.
 - `main.py` a module that is a part of package `rusty_python`.
+
+## References
+
+- [Github](https://github.com/python-poetry/poetry) with 27k+ ⭐
+- [Poetry Documentation](https://python-poetry.org/docs/)
