@@ -18,6 +18,8 @@ $ poetry --version
 
 ## Usage
 
+### New project
+
 Create a new project
 
 ```sh
@@ -37,7 +39,7 @@ This is the file directory structure:
     └── __init__.py
 ```
 
-## Build
+### Build
 
 To check without building in order to save:
 
@@ -59,7 +61,7 @@ Building rusty-python (0.1.0)
   - Built rusty_python-0.1.0-py3-none-any.whl
 ```
 
-## Run
+### Run
 
 Referring to the above directory structure, the following command will run the `main.py` file:
 
@@ -72,3 +74,18 @@ And the following command will run the `greet.py` file:
 ```sh
 $ poetry run python3 -m rusty_python.greet
 ```
+
+### Test
+
+```sh
+$ poetry test
+```
+
+## Coding
+
+Here are the things to note:
+
+- `__init__.py` is a file that makes the directory a python package.
+- `greet.py` a module that is a part of package `rusty_python`.
+  > A module is a single file (or files) that are imported under one import and used. Package is a collection of modules in directories that give a package hierarchy.
+- `main.py` a module that is a part of package `rusty_python`.
